@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sannidhi S Shetty - Portfolio</title>
+    <style>
+        /* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Theme Variables */
+:root {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --primary-color: #008aac;
+    --secondary-color: #008aac;
+    --accent-color: #333;
+    --card-background: #1c1c1c;
+    --pagination-background: #333;
+    --pagination-active: #1e88e5;
+    --link-color: #1e88e5;
+}
+
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 40px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+.profile-info {
+    text-align: left;
+    max-width: 600px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--accent-color);
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+h2:hover {
+    color: var(--primary-color);
+}
+
+/* Navigation Styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--accent-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 15px 20px;
+    display: block;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: var(--primary-color);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/* Card Styles */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    min-width: 280px;
+    background-color: var(--card-background);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: var(--secondary-color);
+    color: rgb(9, 6, 6);
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Contact Styles */
+.contact-info {
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border-top: 1px solid var(--secondary-color);
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+/* Button Styles */
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+a{
+    text-decoration: none;
+    color: yellow;
+}
+    </style>
+</head>
+<body>
+    <header>
+        
+        <div class="profile-container">
+            
+            <div class="profile-info">
+                <h1>Sannidhi s Shetty</h1>
+                <p>An engineering student aspiring to collaborate on dynamic platforms and contribute my efficiency to the fullest while fulfilling organizational goals. I am also committed to continuously upskilling my knowledge and staying current with industry advancements.</p>
+            </div>
+        </div>
+    </header>
+    
+    <nav class="navbar">
+        <ul>
+            <li><a style="color: rgb(122, 201, 241);" href="#objective">Objective</a></li>
+            <li><a style="color: rgb(122, 201, 241);" href="#education">Education</a></li>
+            <li><a style="color: rgb(122, 201, 241);" href="#skills">Skills</a></li>
+            <li><a style="color: rgb(122, 201, 241);" href="#projects">Projects</a></li>
+            <li><a style="color: rgb(122, 201, 241);" href="#internships">Internships</a></li>
+            <li><a style="color: rgb(122, 201, 241);" href="#certifications">Certifications</a></li>
+            <li><a style="color: rgb(122, 201, 241);" href="#publications">Publications</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+       
+        
+        <section id="education">
+            <h2>Education</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Alva’s Institute of Engineering and Technology</h3>
+                    <p>B.E in Computer Science and Engineering<br>
+                    Nov 2021 – May 2025<br>
+                    University: Visvesvaraya Technological University, SGPA: 9.16</p>
+                </div>
+                <div class="card">
+                    <h3>Bantwal Raghuram Mukunda Prabhu Centenary Public School</h3>
+                    <p>SSLC Percentage: 88%<br>
+                    April 2019<br>
+                    Board: CBSE</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="card-container card">
+            <div class="skills-container">
+                <div class="skill">DSA in Java</div>
+                <div class="skill">HTML, CSS, JavaScript</div>
+                <div class="skill">Programming in C, Python</div>
+            </div>
+            </div>
+            
+            <h2>Soft Skills</h2>
+            <div class="card-container card">
+            <div class="skills-container">
+                <div class="skill">Teamwork</div>
+                <div class="skill">Leadership</div>
+                <div class="skill">Adaptability</div>
+            </div>
+        </div>
+        </section>
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Travel Yaari</h3>
+                    <p>The website offers a seamless user experience with a sleek, responsive design built using HTML, CSS, Bootstrap, and JavaScript. It delivers comprehensive information and interactive features.</p>
+                </div>
+                <div class="card">
+                    <h3>Lexi - Virtual Voice Assistant</h3>
+                    <p>Developed a Python-based voice-activated virtual assistant using libraries like SpeechRecognition, pyttsx3, pywhatkit, datetime, Wikipedia, and pyjokes. It can play YouTube videos, provide the time, fetch Wikipedia info, and tell jokes via voice commands.</p>
+                </div>
+                <div class="card">
+                    <h3>Collaborative Codeflow</h3>
+                    <p>Developed a real-time code editor for simultaneous collaboration and instant updates. It supports live coding sessions and improves productivity through shared code editing.</p>
+                </div>
+            </div>
+        </section>
+        
+               
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="card-container card">
+            <ul>
+                <li>Alpha (DSA with Java) by Apna College. March 2024</li>
+                <li>Salesforce Administrator, Virtual Internship. Oct - Nov 2023</li>
+                <li>Postman Classroom Program by COSH NITK. Jan 2023</li>
+            </ul>
+        </div>
+        </section>
+        
+        <section id="education">
+            <h2>Education</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Hands-on Training Program on Artificial Intelligence and Machine Learning:<p> Conducted by the department of CSE, in association with IIIT Allahabad. Dec 2022 - Jan 2023<br>
+                    University: Visvesvaraya Technological University, SGPA: 9.16</p>
+                </div>
+                <div class="card">
+                    <h3>AgileMinds IT Solutions, Mangaluru:</h3>
+                    <p>Intern - Full Stack Web Development. Gained hands-on experience in Java Full Stack Web Development, focusing on JDBC and Servlets. Oct - Nov 2023</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" >
+            <h2>Publications</h2>
+            <div class="card-container card">
+            
+            <p><strong>A Review of Different Image Segmentation Techniques</strong><br>
+            April 2024<br>
+            Authors: Sannidhi, Sannidhi Shetty<br>
+            ICCET243026</p>
+        </div>
+        </section>
+    </main>
+
+    <section id="contact" class="content-section">
+        <h2>Contact</h2>
+        <div class="card-container card">
+        <div class="contact-info"><center>
+            <p>Email: <a href="mailto:sannidhishettycse@gmail.com">sannidhishettycse@gmail.com</a></p>
+                <p>Phone: +91 9902573391</p>
+                <p>LinkedIn: <a href="https:linkedin.com/in/sannidhi-shetty-0a7797237/" target="_blank">linkedin.com/in/Sannidhi Shetty</a></p>
+                <p>GitHub: <a href="https://github.com/SannidhiShetty129" target="_blank">SannidhiShetty129</a></p></center>
+        </div>
+    </div>
+    </section>
+    
+    <footer>
+        <div class="card-container card"><p>&copy; 2024 Sannidhi Shetty. All rights reserved.</p></div>
+        
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
