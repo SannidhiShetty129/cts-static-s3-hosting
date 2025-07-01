@@ -64,10 +64,6 @@ resource "aws_iam_role_policy" "s3_hosting_codepipeline_policy" {
   })
 }
 
-resource "aws_iam_role_policy_attachment" "s3_hosting_codepipeline_admin" {
-  role = aws_iam_role.s3_hosting_codepipeline_role.name
-  policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
-}
 
 resource "aws_iam_role" "s3_hosting_codebuild_role" {
   name = "codebuild-role-s3-hosting-2397710"
@@ -118,9 +114,4 @@ resource "aws_iam_role_policy" "s3_hosting_codebuild_policy" {
       }
     ]
   })
-}
-
-resource "aws_iam_role_policy_attachment" "s3_hosting_codebuild_admin" {
-  role = aws_iam_role.s3_hosting_codebuild_role.name
-  policy_arn = "arn:aws:iam::aws:policy/AdministratorAccess"
 }
